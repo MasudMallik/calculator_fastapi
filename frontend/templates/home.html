@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastAPI Button Calculator</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <div class="calculator">
+
+        <!-- Display Result -->
+        <div class="display">
+           {{result}}
+        </div>
+
+        <!-- Number & Operator Buttons -->
+        <form method="post" action="/press">
+            <div class="grid">
+
+                <!-- Row 1 -->
+                <button name="key" value="7">7</button>
+                <button name="key" value="8">8</button>
+                <button name="key" value="9">9</button>
+                <button class="op" name="key" value="/">÷</button>
+
+                <!-- Row 2 -->
+                <button name="key" value="4">4</button>
+                <button name="key" value="5">5</button>
+                <button name="key" value="6">6</button>
+                <button class="op" name="key" value="*">×</button>
+
+                <!-- Row 3 -->
+                <button name="key" value="1">1</button>
+                <button name="key" value="2">2</button>
+                <button name="key" value="3">3</button>
+                <button class="op" name="key" value="-">−</button>
+
+                <!-- Row 4 -->
+                <button name="key" value="0">0</button>
+                <button name="key" value=".">.</button>
+                <button class="op" name="key" value="C">C</button>
+                <button class="op" name="key" value="+">+</button>
+
+                <!-- Equal -->
+                <button class="equal" name="key" value="=">=</button>
+
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
